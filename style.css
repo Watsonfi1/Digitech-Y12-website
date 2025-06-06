@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'LogoFont'; 
+  src:url('Poppins/Poppins-Medium.ttf')
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.disabled-link {
+    color: white;
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
+    font-family: 'LogoFont', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 900;
+}
+
+.enabled-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'LogoFont', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 900;
+}
+
+#myLink{
+    grid-column: 7/2;
+    grid-row: 2/1;
+}
+
+#myLink2{
+    grid-column: 7/4;
+    grid-row: 2/1;
+}
+
+#myLink3{
+    grid-column: 7/5;
+    grid-row: 2/1;
+}
+
+#myLink4{
+    grid-column: 7/6;
+    grid-row: 2/1;
+}
+
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #074259;
+    z-index: -1;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 10% 1fr 5% 1fr 1fr 1fr 10%;
+    grid-template-rows: 100%;
+    min-height: 15vh;
+    color: white;
+    align-items: center;    
+
+}
+
+#logo {
+    grid-column: 7/4;
+    grid-row: 2/1;
+}
+
+.navbar {
+    font-family: 'LogoFont', sans-serif;
+    font-size: 24px;
+    display: inline-block;
+}
+
+#nav1{
+    grid-column: 4/4;
+    grid-row: 2/1;
+}
+
+#nav2{
+    grid-column: 2/7;
+    grid-row: 2/1;
+}
+
+#nav3{
+    grid-column: 7/6;
+    grid-row: 2/1;
+}
+
+.hamburger{
+    grid-column: 1/7;
+    grid-row: 2/1;
+    max-width: 3vw;
+    max-height: auto;
+    justify-self: end;
+}
+
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    height: 60%;
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* make grippen not appear before */
+.gripen{
+    padding: 0%;
+    margin: 0%;
+    left: -100%;
+    top: 35vh;
+    width: 40%;
+    height: auto;   
+    z-index: 1;
+    position:absolute;
+}
+
+.headline{
+    font-family: 'LogoFont', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-20%, -70%);
+    z-index: 5;
+}
+
+.hero::after{
+    content:"";
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.1;
+    left: 0;
+    top: 0;
+}
