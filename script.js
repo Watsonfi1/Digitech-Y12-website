@@ -1,6 +1,6 @@
 //Setting Variables to be used//
-const linkEl = ['myLink', 'myLink2', 'myLink3', 'myLink4']
-const link = linkEl.map(selector => document.querySelector(selector));
+let num = 0;
+const linkEl = [ 'index.html', 'countries.html', 'aam.html', 'quiz.html']
 const navEl = ['#myLink', '#myLink2', '#myLink3', '#myLink4', '#logo', '.hamburger', '.headline'];
 const elements = navEl.map(selector => document.querySelector(selector));
 const hero = document.querySelector('.hero');
@@ -18,10 +18,12 @@ elements.forEach(el => {
     tl.fromTo(el, 1, { opacity: 0 }, { opacity: 1, onComplete: () => {
       //Make a link for each for this
       //Make it so the buttons only work when visable//
-      link.classList.remove('disabled-link');
-      link.classList.add('enabled-link');
-      link.removeAttribute('aria-disabled');
-      link.href = 'countries.html';
+      el.classList.remove('disabled-link');
+      el.classList.add('enabled-link');
+      el.removeAttribute('aria-disabled');
+      el.href = linkEl[num];
+      num++;
+      if (num == 4){ num -= 4};
     }},'-=1');
   }
 });
