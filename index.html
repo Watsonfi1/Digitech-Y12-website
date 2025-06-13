@@ -9,22 +9,30 @@
 </head>
 <body>
 
-    <header>
         <nav>
             <a id="myLink" href="javascript:void(0);" class="disabled-link" aria-disabled="true">Combat Jets</a>
-            <a id="myLink2" href="javascript:void(0);" class="disabled-link" aria-disabled="true">Countries</a>
+            <ul id="menu-items">  
+                <li>
+                    <a id="myLink2" href="javascript:void(0);" class="disabled-link" aria-disabled="true">Countries</a>
+                    <ul id="dropdown-products">
+                        <li><a href="">America</a></li>
+                        <li><a href="">Russia</a></li>
+                        <li><a href="">European Union</a></li>
+                        <li><a href="">China</a></li>
+                    </ul>
+                </li>
+            </ul>
             <a id="myLink3" href="javascript:void(0);" class="disabled-link" aria-disabled="true">Air to Air</a>
             <a id="myLink4" href="javascript:void(0);" class="disabled-link" aria-disabled="true">Quiz</a>
             <img class="hamburger" src="./burger.svg" alt="hamburger">
         </nav>
         <section>
             <div class="hero">
-                <img src="./ocean.jpg" alt="">
+                <img src="images/ocean.jpg" alt="">
                 <h1 class="headline">Combat Jets</h1>
             </div>
         </section>
-    </header>
-    <img class="gripen" src="./gripen.png" alt="">
+    <img class="gripen" src="images/gripen.png" alt="">
     <div class="slider"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha512-8Wy4KH0O+AuzjMm1w5QfZ5j5/y8Q/kcUktK9mPUVaUoBvh3QPUZB822W/vy7ULqri3yR8daH3F58+Y8Z08qzeg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

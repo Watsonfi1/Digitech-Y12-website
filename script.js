@@ -16,7 +16,6 @@ tl.fromTo(hero, 1, { height: "0%" }, {height: "100%", ease: Power2.easeInOut})
 elements.forEach(el => {
   if (el) {
     tl.fromTo(el, 1, { opacity: 0 }, { opacity: 1, onComplete: () => {
-      //Make a link for each for this
       //Make it so the buttons only work when visable//
       el.classList.remove('disabled-link');
       el.classList.add('enabled-link');

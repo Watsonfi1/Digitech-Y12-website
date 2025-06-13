@@ -12,6 +12,7 @@
 body{
     /* Temporary for testing*/
     height: 200vh;
+    background-color: #074259;
 }
 
 .disabled-link {
@@ -32,6 +33,23 @@ body{
     font-size: 24px;
     display: inline-block;
     font-weight: 900;
+}
+
+#menu-items:hover #dropdown-products{
+    display: block;
+}
+
+#dropdown-products{
+    background-color: #074259;
+    position: absolute;
+    display: none;
+    color: white;
+    top: 50px;
+    left: 100%;
+    text-decoration: none;
+    font-family: 'LogoFont', sans-serif;
+    font-size: 24px;
+    list-style-type: none;
 }
 
 #myLink{
@@ -66,15 +84,17 @@ body{
 
 nav {
     /* Make the sticky header have a box around it and make it not stop when moving past main screen */
-    z-index: 5;
+    z-index: 6;
     display: grid;
     grid-template-columns: 10% 1fr 5% 1fr 1fr 1fr 10%;
     grid-template-rows: 100%;
     min-height: 15vh;
+    max-height: 15vh;
     color: white;
     align-items: center;    
     position: sticky;
     top: 0%;
+    background-color: #074259;
 }
 
 #logo {
