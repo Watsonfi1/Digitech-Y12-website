@@ -1,7 +1,8 @@
 //Setting Variables to be used//
-let num = 0;
+//Lists//
 const linkEl = [ 'index.html', 'countries.html', 'aam.html', 'quiz.html']
 const navEl = ['#myLink', '#myLink2', '#myLink3', '#myLink4', '#logo', '.hamburger', '.headline'];
+let num = 0;
 const elements = navEl.map(selector => document.querySelector(selector));
 const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider');  
@@ -26,4 +27,3 @@ elements.forEach(el => {
     }},'-=1');
   }
 });
-
