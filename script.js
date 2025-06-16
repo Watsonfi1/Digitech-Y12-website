@@ -18,12 +18,17 @@ elements.forEach(el => {
   if (el) {
     tl.fromTo(el, 1, { opacity: 0 }, { opacity: 1, onComplete: () => {
       //Make it so the buttons only work when visable//
-      el.classList.remove('disabled-link');
-      el.classList.add('enabled-link');
-      el.removeAttribute('aria-disabled');
-      el.href = linkEl[num];
+      if (num <= 5){
+        el.classList.remove('disabled-link');
+        el.classList.add('enabled-link');
+        el.removeAttribute('aria-disabled');
+      }
+      if (num <= 4){
+        el.href = linkEl[num];
+      }
       num++;
-      if (num == 4){ num -= 4};
+      if (num == 7){ num -= 7};
+      console.log(num);
     }},'-=1');
   }
 });

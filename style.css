@@ -20,12 +20,17 @@ body{
     grid-row: 2/1;
 }
 
+#container2{
+    grid-column: 7/7;
+    grid-row: 2/1;
+}
+
 .dropdown-selections{
     display: none;
     position: absolute;
-    min-width: 200px;
-    box-shadow: 0 8px 16px 0 black;
+    min-width: 280px;
     z-index: 1;
+    text-indent: 10px;
 }
 
 .dropdown-contents{
@@ -38,10 +43,17 @@ body{
     font-weight: 900;
 }
 
-.dropdown-container:hover .dropdown-selections {
+#container:hover .dropdown-selections {
     display: block;
     top: 60%;
     left: 32%;
+    padding: 20px;
+}
+
+#container2:hover .dropdown-selections {
+    display: block;
+    top: 60%;
+    left: 78%;
     padding: 20px;
 }
 
