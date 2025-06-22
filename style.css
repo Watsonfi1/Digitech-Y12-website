@@ -146,7 +146,7 @@ section{
 }
 
 .countries{
-    width: 500px;
+    width: 350px;
     border: black solid 5px;
     height: auto;
 }
@@ -176,9 +176,14 @@ section{
 }
 
 .hero{
-    height: 60%;
+    height: 80%;
     width: 100%;
     position: relative;
+}
+
+#americaImg{
+    height: 100%;
+    width: 100%;
 }
 
 .hero img {
