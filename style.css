@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body, html{
     max-width: 100%;
     overflow-x: hidden;
@@ -106,7 +110,7 @@ body{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #074259;
+    background: #1f5469;
     z-index: -1;
 }
 
@@ -121,7 +125,9 @@ nav {
     align-items: center;    
     position: sticky;
     top: 0%;
-    background-color: #074259;
+    background-color: #1f5469;
+    border-bottom: 2px solid #123456;
+    /* make the border black and make sure the stick header works*/
 }
 
 #logo {
@@ -235,6 +241,7 @@ section{
 .pageHeader{
     font-size: 40px;
     color: white;
+    margin: 80px;
     margin-left: 300px;
 }
 
@@ -245,19 +252,24 @@ section{
 }
 
 .imgAttr{
+    display: flex;
     color: white;
     justify-self: center;
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 1;
+    align-items: flex-end;
+    margin-bottom: 20px;
 }
 
+
 .pageImg{
+    display: grid;
     height: 250px;
     width: auto;
     justify-self: center;
     grid-column: 3;
     grid-row: 1;
-    border: 5px solid #fff;
+    border: 5px solid #123456;
 }
 
 .imgTxtBox{
@@ -266,4 +278,90 @@ section{
     margin-right: 50px;
     grid-template-columns: 60% 5% 1fr;
     overflow-wrap: break-word;
+}
+
+.specsHeader{
+    justify-self: center;
+    font-size: 40px;
+    margin: 80px;
+    color: white;
+}
+
+.specsPara{
+    font-size: 25px;
+    color: white;
+    margin-left: 80px;
+}
+
+.storiesBox{
+    display: grid;
+    /*Finish turning this box into a 50/50 image and thing box remeber image attribution*/
+}
+
+.storiesHeader{
+    color: white;
+    font-size: 40px;
+    margin: 60px;
+    justify-self: center;
+}
+
+.storiesSubHeader{
+    color: white;
+    font-size: 35px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+.storiesPara{
+    font-size: 25px;
+    color: white;
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
+
+#question{
+    font-size: 40px;
+    color: white;   
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+.btn{
+    position: relative;
+    font-size: 30px;
+    color: white;
+    border: 2px, solid, black;
+    background-color: #074259;
+    left: 35%;
+    width: 400px;
+}
+
+.btn:hover{
+    color: black;
+    background-color: yellow;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+.listContents{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    right: 0;
+    margin-right: 80px;
+    font-weight: bolder;
+}
+.listItem{
+    text-decoration: none;
+    color:white;
+}
+.listItem:hover{
+    color:darkblue;
+}
+
+.storyLink:visited {
+  color: blue;
 }

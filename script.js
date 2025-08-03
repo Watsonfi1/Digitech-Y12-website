@@ -7,6 +7,7 @@ const elements = navEl.map(selector => document.querySelector(selector));
 const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider');  
 const gripen = document.querySelector('.gripen');
+const nav = document.querySelector('nav')
 // Setting TimelineMax which was imported in HTML//
 const tl = new TimelineMax();
 
@@ -31,4 +32,6 @@ elements.forEach(el => {
       console.log(num);
     }},'-=1');
   }
+  tl.fromTo(nav, 1, { borderBottomWidth: "0px" }, { borderBottomWidth: "4px", ease: Power2.easeInOut },
+  "-=1");
 });
