@@ -1,6 +1,6 @@
 //Setting Variables to be used//
 //Lists//
-const linkEl = [ 'index.html', 'countries.html', 'aam.html', 'quiz.html']
+const linkEl = [ 'index.html', 'countries.html', 'aam.html', 'quiz.html'];
 const navEl = ['#myLink', '#myLink2', '#myLink3', '#myLink4', '#logo', '.hamburger', '.headline'];
 let num = 0;
 const elements = navEl.map(selector => document.querySelector(selector));
@@ -8,6 +8,7 @@ const hero = document.querySelector('.hero');
 const slider = document.querySelector('.slider');  
 const gripen = document.querySelector('.gripen');
 const nav = document.querySelector('nav')
+const quizHeader = document.getElementById('question')
 // Setting TimelineMax which was imported in HTML//
 const tl = new TimelineMax();
 
