@@ -16,6 +16,7 @@ const quizAnswers = answerBox.map(selector => document.querySelector(selector));
 //Numbers
 let score = 0;
 let questionNum = 0;
+let questionAmount = 3;
 //Booleans True/False//
 let hasClicked = false;
 //Functions
@@ -78,18 +79,25 @@ function nextQuestion(){
             btn.classList.add('hover');
         });
         questionNum ++;
-        showQuestions(quizHeader, answers);
+        if (questionNum == questionAmount){
+            showResult()
+            console.log('Working')
+        }
+        else{
+            showQuestions(quizHeader, answers);
+            console.log(questionNum);
+        };
+        
 
     }, { once: true});
     
 };
+
+function showResult(){
+
+};
 //Main Code//
 showQuestions(quizHeader, answers);
-checkAnswers(clicked =>{
-    if (clicked){
-        nextQuestion();
-    }
-});
 
 
 
