@@ -10,6 +10,7 @@ const answers = [
 const correctAns = [3, 2, 0];
 //Standard Variables//
 const nextPage = document.getElementById('nextPage');
+const result = document.querySelector('.resultButton')
 const quizHeader = document.getElementById('question');
 const btnClass = document.querySelectorAll('.btn');
 const quizAnswers = answerBox.map(selector => document.querySelector(selector));
@@ -94,7 +95,7 @@ function nextQuestion(){
 };
 
 function showResult(){
-
+    document.
 };
 //Main Code//
 showQuestions(quizHeader, answers);

@@ -442,3 +442,47 @@ hr{
 #europeHeadline{
     color: #074259;
 }
+.tenMissiles{
+    display: flex;
+    justify-content: center;
+}
+.Mten{
+    margin-top: 50px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 100px;
+}
+.Meight{
+    display: none;
+}
+.Msix{
+    display: none;
+}
+#smallTxt{
+    font-size: 30px;
+}
+#temp{
+    display: none;
+}
+.resultHeader{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+.resultSubheader{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin: 100px;
+}
+.replayButton{
+    background-color: #074259;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    border: 2px, solid, black;
+    background-color: #074259;
+    left: 43%;
+    width: 200px;
+}
