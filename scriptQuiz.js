@@ -10,10 +10,15 @@ const answers = [
 const correctAns = [3, 2, 0];
 //Standard Variables//
 const nextPage = document.getElementById('nextPage');
-const result = document.querySelector('.resultButton')
 const quizHeader = document.getElementById('question');
 const btnClass = document.querySelectorAll('.btn');
 const quizAnswers = answerBox.map(selector => document.querySelector(selector));
+const quizItems = document.querySelectorAll('.quizItem');
+const resultItems = document.querySelectorAll('.resultItems');
+//Standard Variables Redo Quiz//
+const result = document.querySelector('.resultButton');
+const displayQAmount = document.getElementById('quizQuestions');
+const displayQScore = document.getElementById('scoreResult');
 //Numbers
 let score = 0;
 let questionNum = 0;
@@ -71,35 +76,43 @@ function checkAnswers(onAnswered){
 };
 
 function nextQuestion(){
-    if(hasClicked) {
-        nextPage.style.visibility = 'visible'; 
+    if (questionNum == questionAmount){
+        showResult();
+        console.log('working')
     }
-    nextPage.addEventListener('click', function() {
-        btnClass.forEach(btn => {
-            btn.classList.remove('correctBtn', 'incorrectBtn');
-            btn.classList.add('hover');
-        });
-        questionNum ++;
-        if (questionNum == questionAmount){
-            showResult()
-            console.log('Working')
+    else{  
+        if(hasClicked) { 
+            nextPage.style.visibility = 'visible'; 
         }
-        else{
-            showQuestions(quizHeader, answers);
-            console.log(questionNum);
-        };
-        
-
-    }, { once: true});
+        nextPage.addEventListener('click', function() {
+            btnClass.forEach(btn => {
+                btn.classList.remove('correctBtn', 'incorrectBtn');
+                btn.classList.add('hover');
+            });
+            questionNum ++;
+        }, { once: true});
     
+    }
 };
 
 function showResult(){
-    document.
+    console.log('working2')
+    displayQAmount.innerHTML = questionAmount;
+    displayQScore.innerHTML = score;
+    result.addEventListener('click', function(){
+        resultItems.forEach(rItm =>{
+            rItm.style.display = 'none';
+        });
+        quizItems.forEach(qItm =>{
+            qItm.style.display = 'none';
+        });
+        score = 0;
+        questionNum = 0;
+        showQuestions(quizHeader, answers)
+    })
 };
 //Main Code//
 showQuestions(quizHeader, answers);
-
 
 
 
