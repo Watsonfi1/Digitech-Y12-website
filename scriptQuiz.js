@@ -1,14 +1,19 @@
 //Setting Variables to be used//
 //Lists//
 const answerBox = ['#btn1', '#btn2', '#btn3', '#btn4'];
-const questions = ['What fighter jet is this?', 'What fighter jet is this?', 'What fighter jet is this?', ''];
+const questions = ['What fighter jet is this?', 'What fighter jet is this?', 'What fighter jet is this?', 'What missile is this?', 'What missile is this?', 'What missile is this?', 'Which of these aircraft is the oldest?', 'Which of these Fighter Jets has been sold the most?'];
 const answers = [
     ['F-16 Fighting Falcon', 'F-15 Eagle', 'F-18 Super Hornet', 'F-22 Raptor'],
     ['Eurofighter', 'J-15', 'JAS 39 Gripen', 'Dassualt Rafale'],
-    ['Su-27', 'J-15', 'MiG 29', 'Su-57']
+    ['Su-27', 'J-15', 'MiG 29', 'Su-57'],
+    ['Aim 9 Sidewinder','Aim-120 AMRAAM', 'R-77-1', 'R-73'],
+    ['Aim-9 Sidewinder','Aim-7 Sparrow', 'R-77-1', 'R-73'],
+    ['IRIS-T', 'Meteor BVRAAM', 'Carl Gustav', 'MICA-EM' ],
+    ['F-15 Eagle', 'J-10 Vigourous Dragon', 'F-16 Fighting Falcon', 'Su-27 Flanker'],
+    ['Mig 29 Fulcrum', 'F-15 Eagle', 'F-16 Fighting Falcon', 'Mig 21 Fishbed']
 ];
-const images = ['./Images/f22.jpg', './Images/Grippen-Closeup.jpg','./Images/Su-27.jpg']
-const correctAns = [3, 2, 0];
+const images = ['./Images/f22.jpg', './Images/Grippen-Closeup.jpg','./Images/Su-27.jpg', './Images/Aim-120.jpg', './Images/R-77-1.jpg', './Images/meteor.jpg', './Images/f4.jpg', './Images/x70.jpg' ]
+const correctAns = [3, 2, 0, 1, 2, 1, 0, 3];
 //Standard Variables//
 const nextPage = document.getElementById('nextPage');
 const quizHeader = document.getElementById('question');
@@ -24,7 +29,7 @@ const displayQScore = document.getElementById('scoreResult');
 //Numbers
 let score = 0;
 let questionNum = 0;
-let questionAmount = 3;
+let questionAmount = 8;
 //Booleans True/False//
 let hasClicked = false;
 //Functions
@@ -101,6 +106,7 @@ function nextQuestion(){
         
 
 function showResult(){
+    nextPage.innerHTML = 'Next Page'
     console.log('working2')
     resultItems.forEach(rItm =>{
             rItm.style.display = 'block';
