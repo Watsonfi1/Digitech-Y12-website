@@ -35,7 +35,7 @@ let hasClicked = false;
 //Functions
 function showQuestions(qHeader, qAnswer){
     hasClicked = false;
-    nextPage.style.visibility = "visable";
+    nextPage.style.visibility = "hidden";
     qHeader.innerHTML = questions[questionNum];
     quizAnswers.forEach((btn, i) => {
         btn.innerHTML = qAnswer[questionNum][i];    

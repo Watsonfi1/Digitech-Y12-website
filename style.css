@@ -463,22 +463,6 @@ hr{
 #europeHeadline{
     color: #074259;
 }
-.tenMissiles{
-    display: flex;
-    justify-content: center;
-}
-.Mten{
-    margin-top: 50px;
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-bottom: 100px;
-}
-.Meight{
-    display: none;
-}
-.Msix{
-    display: none;
-}
 #smallTxt{
     font-size: 30px;
 }
@@ -530,4 +514,11 @@ hr{
     padding: 100px;
     max-width: 100px;
     border: black solid 2px;
+}
+.triggerButton{
+    border: 2px solid black;
+    padding: 10px;
+}
+.aamPlaneImgs{
+    max-width: 300px;
 }
