@@ -506,7 +506,13 @@ hr{
 .options{
     display: none;
 }
+.weaponOptions{
+    display: none;
+}
 .options.show{
+    display: block;
+}
+.weaponOptions.show{
     display: block;
 }
 .optionSelect{
@@ -515,10 +521,23 @@ hr{
     max-width: 100px;
     border: black solid 2px;
 }
-.triggerButton{
+.planeButton{
+    border: 2px solid black;
+    padding: 10px;
+}
+.weaponButton{
     border: 2px solid black;
     padding: 10px;
 }
 .aamPlaneImgs{
     max-width: 300px;
+}
+.hide{
+    display: none;
+}
+.weaponSelect{
+    margin-left: 30px;
+    padding: 100px;
+    max-width: 100px;
+    border: black solid 2px;
 }
