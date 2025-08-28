@@ -42,10 +42,10 @@
             <div class="options">
                 <!-- Once complete add them into a grid shape that would make each contry have a row becoming a 4x4 grid -->
                 <!-- Russian Planes -->
-                <div class="option"><img class="aamPlaneImgs" data-plane="Su27" src="./Images/Su-27.jpg"></div>
-                <div class="option"><img class="aamPlaneImgs" data-plane="Mig29" src="./Images/Mig-29SMT.jpg"></div>
-                <div class="option"><img class="aamPlaneImgs" data-plane="Mig21" src="./Images/Mig-29SMT.jpg"></div>
-                <div class="option"><img class="aamPlaneImgs" data-plane="Su-57" src="./Images/Mig-29SMT.jpg"></div>
+                <div class="option" data-plane="Su27"><img class="aamPlaneImgs" src="./Images/Su-27.jpg"></div>
+                <div class="option" data-plane="Mig29"><img class="aamPlaneImgs" src="./Images/Mig-29SMT.jpg"></div>
+                <div class="option" data-plane="Mig29"><img class="aamPlaneImgs"x src="./Images/Mig-29SMT.jpg"></div>
+                <div class="option" data-plane="Su57"><img class="aamPlaneImgs" src="./Images/Mig-29SMT.jpg"></div>
                 <!-- American Planes -->
                 <!-- Chinese Planes -->
                 <!-- European Planes -->
@@ -55,7 +55,17 @@
         <div class="weaponSelect" id="weaponSelector">
             <div class="weaponButton">Select Weapon</div>
             <div class="weaponOptions">
-                <div class="option"><img class="missileImgs" data-missile="R77-1" src="./Images/R-77-1.jpg"></div>
+                <!-- Russian Missiles -->
+                <div class="option" data-missile="R77-1" data-plane="Su27 Mig29"><img class="missileImgs" src="./Images/R-77-1.jpg"></div>
+                <div class="option" data-missile="R77" data-plane="Su27 Mig29"><img class="missileImgs" src="./Images/r77.jpeg"></div>
+                <div class="option" data-missile="R77M" data-plane="Su57"><img class="missileImgs" src="./Images/R77M.webp"></div>
+                <div class="option" data-missile="R37" data-plane="Su57"><img class="missileImgs" src="./Images/R37.jpg"></div>
+                <div class="option" data-missile="R73" data-plane="Su57 Mig29 Su27"><img class="missileImgs" src="./Images/R73.jpg"></div>
+                <div class="option" data-missile="R74" data-plane="Su57 Mig29 Su27"><img class="missileImgs" src="./Images/R74.jpg"></div>
+                <div class="option" data-missile="R60M" data-plane="Mig21 Su57 Mig29 Su27"><img class="missileImgs" src="./Images/R60M.jpg"></div>
+                <div class="option" data-missile="R13M1" data-plane="Mig21"><img class="missileImgs" src="./Images/R13M1.jpg"></div>
+                <div class="option" data-missile="R3S" data-plane="Mig21"><img class="missileImgs" src="./Images/R3S.png"></div>
+                <div class="option" data-missile="R3R" data-plane="Mig21"><img class="missileImgs" src="./Images/R3R.png"></div>
             </div>
         </div>
     </main>

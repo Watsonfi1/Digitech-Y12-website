@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             options.classList.toggle('show');
             console.log(option);
             currentPlane = option; //CurrentPlane = 'Su27'//
+    
             option.classList.toggle('hide');
         });
     });
@@ -31,8 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
             weaponEvent.innerHTML = option.innerHTML;
             weaponOptions.classList.toggle('show');
             console.log(option);
+            selectedPlane = currentPlane?.dataset?.plane?.trim();
+            missileCheck = option.dataset.plane?.trim();
             currentMissile = option; //CurrentPlane = 'Su27'//
             option.classList.toggle('hide');
+            if (selectedPlane && missileCheck.includes(selectedPlane)){
+                console.log("Somethings working")
+            }
         });
     });
 });

@@ -532,6 +532,9 @@ hr{
 .aamPlaneImgs{
     max-width: 300px;
 }
+.missileImgs{
+    width: 300px;
+}
 .hide{
     display: none;
 }
