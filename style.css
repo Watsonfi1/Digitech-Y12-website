@@ -510,27 +510,31 @@ hr{
     display: none;
 }
 .options.show{
-    display: block;
+    display: flex;
 }
 .weaponOptions.show{
-    display: block;
-}
-.optionSelect{
-    margin-left: 30px;
-    padding: 100px;
-    max-width: 100px;
-    border: black solid 2px;
+    display: flex;
 }
 .planeButton{
-    border: 2px solid black;
-    padding: 10px;
+    color: white;
+    font-size: 40px;
+    border: 4px solid #123456;
+    padding: 10px; 
+    max-width: 600px;
+    background-color: #1f5469;
+    justify-self: center;
 }
 .weaponButton{
-    border: 2px solid black;
-    padding: 10px;
+    color: white;
+    font-size: 40px;
+    border: 4px solid #123456;
+    padding: 10px; 
+    max-width: 400px;
+    background-color: #1f5469;
+    justify-self: center;
 }
 .aamPlaneImgs{
-    max-width: 300px;
+    width: 400px;
 }
 .missileImgs{
     width: 300px;
@@ -539,8 +543,44 @@ hr{
     display: none;
 }
 .weaponSelect{
-    margin-left: 30px;
-    padding: 100px;
-    max-width: 100px;
-    border: black solid 2px;
+    justify-self: center;
+    margin-top: 100px;
+}
+.optionSelect{
+    justify-self: center;
+}
+.missileName{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.planeName{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.weaponOptions{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex: 0 0 10%;
+}
+
+.weaponOptions .option{
+    border: 2px solid #123456;
+    background-color: #1f5469;
+}
+
+.options{
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    flex: 0 0 33%;
+}
+
+.options .option{
+    border: 2px solid #123456;
+    background-color: #1f5469;
 }
