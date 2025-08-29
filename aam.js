@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     options.querySelectorAll('.option').forEach(option => {
         option.addEventListener('click', () => {
+            // This doesn't work for some reason?  currentMissile.classList.toggle('hide');
             weaponEvent.innerHTML = defaultInner
             if (currentPlane != null){
                 currentPlane.classList.toggle('hide')
@@ -31,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 selectedPlane = currentPlane?.dataset?.plane?.trim();
                 missileCheck = option2.dataset.plane?.trim();
                 if (selectedPlane && missileCheck.includes(selectedPlane)){
-                console.log("Somethings working");
+                    console.log("Somethings working");
+                    //It shows all the options including the one I have selected.// 
                 }
                 else if(selectedPlane){
                     option2.classList.add('hide');
